@@ -1,4 +1,4 @@
-name: 'GitHub PR Content Checker'
+name: 'GitHub PR Content Checker with regex'
 description: 'Checks PR body and diff for word occurrences'
 author: 'jsoares'
 branding:
