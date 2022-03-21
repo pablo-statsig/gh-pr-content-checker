@@ -19,6 +19,11 @@ inputs:
     description: 'Max number of lines changed per PR'
   maxFilesChanged:
     description: 'Max number of files changed per PR'
+  diffDoesNotContainRegex:
+    description: 'Regex match that should not be in the diff'
+  diffContainsRegex:
+    description: 'Regex match that should be in the diff'
+
 outputs:
   diff:
     description: "Lines added to the PR"
