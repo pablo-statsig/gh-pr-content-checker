@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check PR
-      uses: jsoares/gh-pr-content-checker@master
+      uses: pablo-statsig/gh-pr-content-checker@master
       with:
         github-token: ${{github.token}}
         bodyContains: 'Add this'
