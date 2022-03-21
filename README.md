@@ -21,7 +21,9 @@ jobs:
         bodyContains: 'Add this'
         bodyDoesNotContain: "Delete this"        
         diffContains: 'Add this'
-        diffDoesNotContain: "Delete this"        
+        diffDoesNotContain: "Delete this"   
+        diffContainsRegex: '<regex here>'
+        diffDoesNotContainRegex: '<regex here>'
         maxLinesChanged: 1
         maxFilesChanged: 1
 ```
@@ -31,7 +33,7 @@ An example is also provided in .github/workflows/ in this repository.
 
 ## History
 
-This is a customisation of [JJ/github-pr-contains-action](https://github.com/JJ/github-pr-contains-action/), using updated dependencies, improving counting behaviour, and adding a diffDoesNotContain flag.
+This is a customisation of [jsoares/gh-pr-content-checker](https://github.com/jsoares/gh-pr-content-checker/), adding regex
 
 * `v0`: Proof of concept, published to marketplace
 * `v1`: Adds several more checks
@@ -41,6 +43,10 @@ This is a customisation of [JJ/github-pr-contains-action](https://github.com/JJ/
 
 * `v3`: Adds diffDoesNotContain field, improves counting behaviour, update deps
 
+--forked--
+
+* `v4`: Adds regex checking
+
 ## License
 
-This is a modification of [JJ/github-pr-contains-action](https://github.com/JJ/github-pr-contains-action/) and is released under the MIT license.
+This is a modification of [jsoares/gh-pr-content-checker](https://github.com/jsoares/gh-pr-content-checker/) and is released under the MIT license.
